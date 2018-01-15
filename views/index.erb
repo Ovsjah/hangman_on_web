@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="hangman.css">
+  </head>
+  <body>
+    <div>
+      <pre>
+        <%= hangman %>
+      </pre>
+      <p>
+        <%= underscored_word %>
+      </p>
+      <form action="/" method="post">
+        <input type="text" name="letter" pattern="[A-Za-z]" size="2" maxlength="1" placeholder="a-z" style="text-align:center;"> or   
+        <input type="text" name="word" pattern="[A-Za-z]{<%= secret_word.size %>}" maxlength="<%= secret_word.size %>" placeholder="whole word" style="text-align:center;">
+        <input type="submit" value="Guess!">
+      </form>
+    </div>
+  </body>
+</html>

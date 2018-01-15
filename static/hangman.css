@@ -1,0 +1,19 @@
+pre {
+  width: 100px;
+  position: relative;
+  left: 75px;
+}
+
+p {
+  text-align: center;
+  width: 173px;
+  position: relative;
+  left: 50px;
+  bottom: 10px;
+}
+
+div {
+  color: white;
+  width: 286px;
+  background: black;
+}

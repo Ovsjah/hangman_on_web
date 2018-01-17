@@ -92,6 +92,7 @@ DEPENDENCIES
   dm-transactions
   dm-types
   dm-validations
+  do_sqlite3
   json (= 1.8.6)
   shotgun
   sinatra

@@ -2,18 +2,83 @@ pre {
   width: 100px;
   position: relative;
   left: 75px;
+  bottom: 15px;
+}
+
+h1 {
+  position: relative;
+  margin: auto;
+  text-align: center;
+  top: 10px;
 }
 
 p {
   text-align: center;
   width: 173px;
   position: relative;
-  left: 50px;
-  bottom: 10px;
+  left: 55px;
+}
+
+nav {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: pink;
+}
+
+a:active {
+  color: red;
+}
+
+input {
+  text-align: center;
+}
+
+input[type=button] {
+  float: right;
 }
 
 div {
+  margin: auto;
   color: white;
   width: 286px;
   background: black;
+}
+
+span {
+  position: relative;
+  top: 55px;
+  font-size: 200%;
+}
+
+#win {
+  color: green;
+  left: 50px;
+}
+
+#lose {
+  float: right;
+  color: red;
+  right: 50px;
+}
+
+#underscored {
+  position: relative;
+  bottom: 15px;
+}
+
+#user {
+  position: relative;
+  top: 20px;
+}
+
+.flash {
+  position: relative;
+  top: 10px;
 }

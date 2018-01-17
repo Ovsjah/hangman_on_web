@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>
+      Hangman on Web
+    </title>
+    <link rel="stylesheet" href="hangman.css">
+  </head>
+  <body> 
+    <div>
+      <nav>
+        <a href="/login">LOG IN</a> |
+        <a href="/register">SIGN UP</a> |
+        <a href="/logout">LOG OUT</a> 
+      </nav>
+      <% if flash[:success] %>
+        <p class="flash" style="color:green;">
+          <%= flash[:success] %>
+        </p>
+      <% end %>
+      <% if flash[:error] %>
+        <p class="flash" style="color:red;">
+          <%= flash[:error] %>
+        </p>
+      <% end %>       
+      <%= yield %>
+    </div>
+  </body>
+</html>

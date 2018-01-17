@@ -2,7 +2,7 @@ class SecretWord
   attr_accessor :found_letters, :secret_word
   
   def initialize
-    @found_letters = []
+    @found_letters = ''
     @secret_word = create
   end
   
@@ -14,8 +14,7 @@ class SecretWord
   
   def modify(letter = nil)
     found_letters << letter unless letter.nil?
-    letters = found_letters.join
-    not_found_letters = secret_word.delete(letters)
+    not_found_letters = secret_word.delete(found_letters)
     secret_word.gsub(/[#{not_found_letters}]/, '_ ')
   rescue RegexpError
     "All letters are found! Well done!"

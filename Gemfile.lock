@@ -59,6 +59,7 @@ GEM
     json_pure (1.8.6)
     multi_json (1.13.1)
     mustermann (1.0.1)
+    pg (1.0.0)
     public_suffix (3.0.1)
     rack (2.0.3)
     rack-protection (2.0.0)
@@ -94,6 +95,7 @@ DEPENDENCIES
   dm-types
   dm-validations
   json (= 1.8.6)
+  pg
   rake
   shotgun
   sinatra

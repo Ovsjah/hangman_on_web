@@ -1,8 +1,8 @@
 require 'data_mapper'  # object-relational mapper (maps object to database)
-require 'dm-sqlite-adapter'  # allows DataMapper to communicate to the Database
+require 'dm-postgres-adapter'  # allows DataMapper to communicate to the Database
 require 'bcrypt'  # password hashing function
 
-DataMapper.setup(:default, "sqlite://#{Dir.pwd}/db.sqlite")  # specifying my database connection
+DataMapper.setup(:default, "postgres://localhost/hangman")  # specifying my database connection
 
 
 class User
